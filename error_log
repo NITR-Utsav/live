@@ -1,0 +1,48 @@
+[09-Jan-2019 12:13:00 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:13:00 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:13:00 UTC] PHP Warning:  include(): Failed opening 'retrive.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:14:04 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:14:04 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:14:04 UTC] PHP Warning:  include(): Failed opening 'retrive.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:14:07 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:14:07 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:14:07 UTC] PHP Warning:  include(): Failed opening 'retrive.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:14:58 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:14:58 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:14:58 UTC] PHP Warning:  include(): Failed opening 'retrive.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:16:37 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:16:37 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:16:37 UTC] PHP Warning:  include(): Failed opening 'retrive.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:17:27 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/nitrutsav/public_html/db_connect.php on line 7
+[09-Jan-2019 12:17:27 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/nitrutsav/public_html/db_connect.php on line 7
+[09-Jan-2019 12:18:34 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/nitrutsav/public_html/db_connect.php on line 7
+[09-Jan-2019 12:18:34 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/nitrutsav/public_html/db_connect.php on line 7
+[09-Jan-2019 12:18:39 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:18:39 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:18:39 UTC] PHP Warning:  include(): Failed opening 'retrive.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:19:06 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/nitrutsav/public_html/db_connect.php on line 7
+[09-Jan-2019 12:19:06 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/nitrutsav/public_html/db_connect.php on line 7
+[09-Jan-2019 12:19:24 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/nitrutsav/public_html/db_connect.php on line 7
+[09-Jan-2019 12:19:24 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/nitrutsav/public_html/db_connect.php on line 7
+[09-Jan-2019 12:23:44 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:23:44 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:23:44 UTC] PHP Warning:  include(): Failed opening 'retrive.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:24:15 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'nitrutsav'@'localhost' (using password: YES) in /home/nitrutsav/public_html/db_connect.php on line 7
+[09-Jan-2019 12:24:15 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/nitrutsav/public_html/db_connect.php on line 7
+[09-Jan-2019 12:24:28 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'nitrutsav'@'localhost' (using password: YES) in /home/nitrutsav/public_html/db_connect.php on line 7
+[09-Jan-2019 12:24:28 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/nitrutsav/public_html/db_connect.php on line 7
+[09-Jan-2019 12:36:44 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:36:44 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 12:36:44 UTC] PHP Warning:  include(): Failed opening 'retrive.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 15:07:24 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 15:07:24 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 15:07:24 UTC] PHP Warning:  include(): Failed opening 'retrive.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 15:07:48 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 15:07:48 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 15:07:48 UTC] PHP Warning:  include(): Failed opening 'retrive.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 15:10:34 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 15:10:34 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 15:10:34 UTC] PHP Warning:  include(): Failed opening 'retrive.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 15:14:45 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 15:14:45 UTC] PHP Warning:  include(retrive.php): failed to open stream: No such file or directory in /home/nitrutsav/public_html/login.php on line 35
+[09-Jan-2019 15:14:45 UTC] PHP Warning:  include(): Failed opening 'retrive.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nitrutsav/public_html/login.php on line 35
