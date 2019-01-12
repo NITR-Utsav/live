@@ -10,12 +10,23 @@ $_SESSION["signed_in"]=signed_in();
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<link rel="shortcut icon" type="images/png" href="/images/NU_LOGO_BW.png"/>
+	<link rel="shortcut icon" type="images/png" href="images/NU_LOGO_BW.png"/>
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<!-- Material Design Bootstrap -->
   	<link href="https://mdbootstrap.com/previews/templates/landing-page/css/mdb.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <style type="text/css">
+    	
+.owl-carousel.owl-loaded {
+    display: inline-block;
+}
+    </style>
 </head>
 
 <body >
@@ -211,26 +222,91 @@ $_SESSION["signed_in"]=signed_in();
 							</div>
 						</div>
 						<!-- Streak -->
-						
-						<div>
-<!--							Content goes here-->
+						<div class="container-fluid" id="about">
+							<!-- Section: Features v.1 -->
+							<section id="features" class="section feature-box mt-5 mb-5">
+
+								<!-- Section heading -->
+								<h3 class="text-center dark-grey-text font-weight-bold mb-5 mt-5 pt-5 wow fadeIn" data-wow-delay="0.2s">
+									<strong>SPONSORS</strong>
+								</h3>
+								<div class="container">
+				                <div class="row">
+				                    <div class="col-md-12">
+									<div class="heading text-center">
+				                            <h3 style="font-family: bazar;">Our Current Sponsors</h3>
+				                        </div>
+				                        <div class="owl-carousel owl-theme">
+			                                <img src="images/sponsors/new/BB.png" style="max-height:10em;max-width:10em;" alt="" class="img-responsive" >
+			                                <img src="images/sponsors/new/BM.png" style="padding-top:1.5em;max-height:10em;max-width:10em;" alt="" class="img-responsive">
+			                                <img src="images/sponsors/new/Coca cola.png" style="padding-top:2em;max-height:10em;max-width:10em;" alt="" class="img-responsive">
+			                                <img src="images/sponsors/new/IOCL.png" style="max-height:8em;max-width:8em;" alt="" class="img-responsive">
+			                                <img src="images/sponsors/new/KJS.png" style="padding-top:1.5em;max-height:10em;max-width:10em;" alt="" class="img-responsive">
+			                                <img src="images/sponsors/new/RT.png" style="padding-top:1em;max-height:10em;max-width:10em;" alt="" class="img-responsive">
+			                                <img src="images/sponsors/new/OHM.jpg" style="padding-top:2em;max-height:10em;max-width:10em;" alt="" class="img-responsive">
+			                                <img src="images/sponsors/new/PPT.jpg" style="max-height:10em;max-width:10em;" alt="" class="img-responsive">
+			                                <img src="images/sponsors/new/SRG.jpg" style="max-height:8em;max-width:8em;" alt="" class="img-responsive">
+				                        </div>
+				                        <!-- /.owl-carousel -->
+				                    </div>
+
+				                </div>
+				            </div>
+							</section>
 						</div>
-						
+				        <section id="sponsor" class="bar background-white no-mb" style="background-image:url(images/images/background.jpg) !important;">
+				            
+				        </section>
+						<!-- Footer -->
+						<footer class="page-footer font-small special-color-dark pt-4">
+						    <!-- Footer Elements -->
+						    <div class="container">
+						      <!-- Social buttons -->
+						      <ul class="list-unstyled list-inline text-center">
+						        <li class="list-inline-item">
+						          <a href="https://www.facebook.com/nitrutsav.nitrkl/" target="_blank" class="btn-floating btn-fb mx-1">
+						            <i class="fa fa-facebook-f"> </i>
+						          </a>
+						        </li>
+						        <li class="list-inline-item">
+						          <a href="https://www.facebook.com/nitrutsav.nitrkl/" target="_blank" class="btn-floating btn-tw mx-1">
+						            <i class="fa fa-instagram icon"> </i>
+						          </a>
+						        </li>
+						        <li class="list-inline-item">
+						          <a href="mailto:nitrutsav2019@gmail" target="_blank" class="btn-floating btn-gplus mx-1">
+						            <i class="fa fa-at icon"> </i>
+						          </a>
+						        </li>
+						      </ul>
+						      <!-- Social buttons -->
+
+						    </div>
+						    <!-- Footer Elements -->
+
+						    <!-- Copyright -->
+						    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+						      <a href="https://www.nitrutsav.com/"> NITRUTSAV</a>
+						    </div>
+						    <!-- Copyright -->
+
+						  </footer>
+						<!-- End Footer -->
 					</div>
 				</section>
 			</div>
 		</div>
 	</div>
-
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/require.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
-	<script type="text/javascript">require(["main"], function(main) {main.run({region: 'na',locale: 'en_US',landingUrlPattern: 'http://pentakill.leagueoflegends.com/{{locale}}/',versionedAssetPath: 'https://lolstatic-a.akamaihd.net/frontpage/apps/prod/pentakill2/en_US/7bd32ba296c00775cac78023e40c62381f35cf2c/assets/',qualaroo: {"onLoadSurveyId":"177363","afterVideoPlayingSurveyIds":["177368","177367","177366","177365","177364"]}});});
+	<script type="text/javascript">require(["main"], function(main) {main.run({region: 'na',locale: 'en_US',landingUrlPattern: 'http://pentakill.leagueoflegends.com/{{locale}}/',versionedimagesPath: 'https://lolstatic-a.akamaihd.net/frontpage/apps/prod/pentakill2/en_US/7bd32ba296c00775cac78023e40c62381f35cf2c/asset/',qualaroo: {"onLoadSurveyId":"177363","afterVideoPlayingSurveyIds":["177368","177367","177366","177365","177364"]}});});
 	</script>
 	<!--  MDB core JavaScript  -->
-  	<script type="text/javascript" src="https://mdbootstrap.com/previews/templates/landing-page/js/mdb.min.js"></script>
+  	<script type="text/javascript" src="https://mdbootstrap.com/previews/templates/landing-page/js/mdb.min.js"></script> <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
 	<script>
 		//Animation init
 		new WOW().init();
@@ -272,6 +348,31 @@ hidePreloader();
 		document.getElementById("minutes").innerHTML = minutes;
  	}, 1000);
 
+$( '.owl-carousel' ).owlCarousel({
+    items: 6,
+    nav: true,
+    dots: false,
+    mouseDrag: true,
+    responsiveClass: true,
+    responsive: {
+        0:{
+          items: 1
+        },
+        480:{
+          items: 3
+        },
+        769:{
+          items: 6
+        }
+    }
+});
+
+//Background image
+$( '.img-wrap' ).each( function(){
+    var img = $( this ).find( 'img' );
+    var src = img.attr( 'src' );
+    $( this ).css( 'background-image', 'url( '+ src +' )' );
+});
   	</script>
 
 </body>

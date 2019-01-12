@@ -31,12 +31,15 @@ $_SESSION["signed_in"]=signed_in();
 	<link rel="shortcut icon" type="images/png" href="/images/NU_LOGO_BW.png"/>
 	<!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="https://mdbootstrap.com/previews/templates/landing-page/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://mdbootstrap.com/previews/templates/landing-page/css/mdb.min.css" rel="stylesheet">
 	<!--=======Font Open Sans======-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Material Design Bootstrap -->
+    <link href="https://mdbootstrap.com/previews/templates/landing-page/css/mdb.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/login/style.css">
   <link href="css/login/style-default.css" rel="stylesheet">
 </head>
@@ -275,7 +278,44 @@ html {
         </div>
       </div>
     </div>
+<br/>
+<br/>
+<br/><br/><br/>
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
+        <!-- Footer Elements -->
+        <div class="container">
+          <!-- Social buttons -->
+          <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/nitrutsav.nitrkl/" target="_blank" class="btn-floating btn-fb mx-1">
+                <i class="fa fa-facebook-f"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/nitrutsav.nitrkl/" target="_blank" class="btn-floating btn-ins mx-1">
+                <i class="fa fa-instagram icon"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:nitrutsav2019@gmail" target="_blank" class="btn-floating btn-email mx-1">
+                <i class="fa fa-at icon"> </i>
+              </a>
+            </li>
+          </ul>
+          <!-- Social buttons -->
 
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+          <a href="https://www.nitrutsav.com/"> NITRUTSAV</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+    <!-- End Footer -->
   <!--  JQuery  -->
     <script type="text/javascript" src="https://mdbootstrap.com/previews/templates/landing-page/js/jquery-3.3.1.min.js"></script>
     <!-- <script type="text/javascript" src="js/index.js"></script> -->
