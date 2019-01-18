@@ -147,7 +147,7 @@ $_SESSION["signed_in"]=signed_in();
 								<a href="contact.php"><img src="images/TENT3.png"></a>
 							</div>
 							<div class="col-md-4 text-center offset-2">
-								<a href="comingsoon.php"><img src="images/TENT4.png"></a>
+								<a href="events.php"><img src="images/TENT4.png"></a>
 							</div>
 							<div class="col-md-4 text-center">
 								<a href="ca.php"><img src="images/TENT5.png"></a>

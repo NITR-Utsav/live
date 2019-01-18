@@ -26,7 +26,7 @@
           
           $count = mysqli_num_rows($result);
           if($count==1){
-            $row = $result->fetch_array(MYSQLI_ASSOC) or die("F2ailed to connect to MySQL: " . mysqli_error($con));
+            $row = $result->fetch_array(MYSQLI_ASSOC) or die("Failed to connect to MySQL: " . mysqli_error($con));
             $_SESSION['userid'] = $row['uid'];
             $_SESSION['signed_in']=true;
             echo "Login Successful !";
