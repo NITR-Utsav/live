@@ -136,13 +136,18 @@ $_SESSION["signed_in"]=signed_in();
 								<a href="comingsoon.html"><img src="images/TENT1.png"></a>
 							</div>
 							<div class="col-md-4 text-center">
-								<a href="login.php"><img src="images/TENT2.png"></a>
+								<?php
+									if(!$_SESSION['signed_in'])
+										echo '<a href="login.php"><img src="images/TENT2.png"></a>';
+									else
+										echo '<a href="user_profile.php"><img src="images/TENT2.png"></a>';
+									?>
 							</div>
 							<div class="col-md-4 text-center">
 								<a href="contact.php"><img src="images/TENT3.png"></a>
 							</div>
 							<div class="col-md-4 text-center offset-2">
-								<a href="comingsoon.php"><img src="images/TENT4.png"></a>
+								<a href="events.php"><img src="images/TENT4.png"></a>
 							</div>
 							<div class="col-md-4 text-center">
 								<a href="ca.php"><img src="images/TENT5.png"></a>

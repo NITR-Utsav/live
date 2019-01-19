@@ -1,0 +1,34 @@
+#splace{
+	height: 100vh;
+	width: auto;
+	z-index: 9999;
+	background-color: orange;
+	
+	
+}
+
+.parallax
+{
+	background-image: url(../../img/rajesh-khanna.png);
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    opacity: 0.8;
+}
+
+.background-retro
+{
+   background-image:url(../../img/texture-background.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: repeat-x;
+  
+}
+
+/*body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
