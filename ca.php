@@ -48,7 +48,8 @@ $_SESSION["signed_in"]=signed_in();
 
 body {
   background-image: url("images/Background.png");
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
+  background-repeat: repeat-y;
   background-size: 100% 100%;
 }
 html {
@@ -77,7 +78,7 @@ html {
         <a class="nav-link" href="comingsoon.php">Gallery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="comingsoon.php">Events</a>
+        <a class="nav-link" href="all_events.php">Events</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="contact.php">Contact us</a>
@@ -147,7 +148,7 @@ html {
 </div>
 <br/><br/><br/><br/><br/><br/>
     <!-- Footer -->
-    <footer class="page-footer font-small fixed-bottom special-color-dark pt-4">
+    <footer class="page-footer font-small special-color-dark pt-4">
         <!-- Footer Elements -->
         <div class="container">
           <!-- Social buttons -->

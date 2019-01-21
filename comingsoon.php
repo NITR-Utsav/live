@@ -103,7 +103,7 @@ html {
         <a class="nav-link" href="#">Gallery</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Events</a>
+        <a class="nav-link" href="all_events.php">Events</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="contact.php">Contact us
@@ -156,7 +156,7 @@ html {
     </div>
 
     <!-- Footer -->
-    <footer class="page-footer font-smalll fixed-bottom special-color-dark pt-4">
+    <footer class="page-footer font-small special-color-dark pt-4">
         <!-- Footer Elements -->
         <div class="container">
           <!-- Social buttons -->
