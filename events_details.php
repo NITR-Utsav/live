@@ -2,6 +2,12 @@
 
 require './db_connect.php';
 
+$query = "SELECT * FROM event";
+$result2 = mysqli_query($con, $query);
+$row2 = mysqli_fetch_array($result2);
+$result = mysqli_query($con, $query);
+$row = mysqli_fetch_array($result);
+
 $_SESSION["signed_in"]=signed_in();
 ?>
 
@@ -129,77 +135,92 @@ $_SESSION["signed_in"]=signed_in();
 <!--/.Navbar -->
 <br><br>
 <main>
-<div class="container text-left">
-  <h3 style="font-weight:bold;padding-bottom: 10px;"><span">ALOHOMORA</span></h3>
+<div class="container mb-5">
+    <h3 style="font-weight:bold;padding-bottom: 10px;"><span">ALOHOMORA</span></h3>
     <div class="row">
-      <div class="col-lg-6 col-md-4 col-sm-12">
-        <img src="img/aa.png" style="width:70%;border-radius:15px;box-shadow:2px 2px 8px #808080;" alt="Image">
-      </div> 
-      <div class="col-lg-3 col-md-4 col-sm-12">
-        <div class="well-lg">
-          <h4 style="font-weight:bold;"><span> DATE</span></h4>
-          <span>22/10/2018</span>
-        </div>
-        <div class="well-lg">
-          <h4 style="font-weight:bold;"><span> VENUE</span></h4>
-          <span>MAIN BUILDING</span>
-        </div>
-        <div class="well-lg">
-          <h4 style="font-weight:bold;"><span> You can register now</span></h4></h5><button class="btn" style="color: black;"id="event_button" class="betn btn-template-main" style="margin-bottom:1em;"><h4><span>Register</span></h4></button>
-        </div>
-      </div> 
-      <div class="col-lg-3 col-md-4 col-sm-12">
-        <div class="well-lg">
-          <h4 style="font-weight:bold;"><span>TIME</span></h4>
-          <span>9:00 am  to 12:00 pm</span>
-        </div>
-        <div class="well-lg">
-          <h4 style="font-weight:bold;"><span>COORDINATORS<span></h4>
-          <span>PAWAN</span>
-        </div>
-        <!-- <div class="well-lg">
-          <h5 style="font-weight:bold;">
-          <span>You can share it on</span></h5><a href="#" class="fa fa-facebook" style="padding:10px;border-radius:20px;">
-        </div> -->
-      </div> 
-    </div>
-    <div class="row" style="color: black;">
-      <div class="col-lg-12 col-md-12 col-sm-12" style="border:1px solid white; box-shadow:2px 2px 8px #808080; border-radius:10px;margin: 20px;">
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#home">DESCRIPTION</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu1">RULES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu2">JUDGING CRITERIA </a>
-          </li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content" >
-          <div id="home" class="tab-pane fade in active"><br>
-              <p>The entire event will consist of two rounds, which will be as follows:<br><br>
-               1. A quiz<br><br>
-               2. A rally alongwith a treasure hunt<br><br>
-             </p>
-          </div>
-          <div id="menu1" class="tab-pane fade">
-                <p><br>
-               The event contains of two rounds:-
-               <br><br>
-                1. Elimination round - all the registered teams have to pass through elimination round which contains a quiz based on Food and Food companies.
-                The quiz would not be a typical pen-paper quiz but an interesting quiz. The top 5-7 teams (or solo) would be selected for next round.
-                <br><br>
-                2. Treasure hunt - the shortlisted team have to find the hidden treasure in order to win the event. The major point to keep track of is that all the groups participating must at least have an android enabled phone. The helping members would be provided all around the campus.</p>
+        <div class="col-lg-6">
+            <img class="w-100" src="img/1.jpg" style="border-radius:15px;box-shadow:2px 2px 8px #808080;" alt="Image">
+        </div> 
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-md-6">
+                     <div class="well-lg mx-3 mb-3">
+                        <h4 style="font-weight:bold;"><span> DATE</span></h4>
+                        <span>22/10/2018</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="well-lg mx-3 mb-3">
+                        <h4 style="font-weight:bold;"><span>TIME</span></h4>
+                        <span>9:00 am  to 12:00 pm</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="well-lg mx-3 mb-3">
+                        <h4 style="font-weight:bold;"><span> VENUE</span></h4>
+                        <span>MAIN BUILDING</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="well-lg mx-3 mb-3">
+                        <h4 style="font-weight:bold;"><span>COORDINATORS<span></h4>
+                        <span>PAWAN</span>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6">
+                    <div class="well-lg mx-3 mb-3">
+                        <h4 style="font-weight:bold;"><span> You can register now</span></h4><button class="btn" style="color: black;"id="event_button" class="betn btn-template-main" style="margin-bottom:1em;">Register</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="well-lg mx-3 mb-3">
+                      <h5 style="font-weight:bold;">
+                      <span>You can share it on</span></h5><a href="#"> <i class="fa fa-facebook" style="padding:10px;border-radius:20px;"></i></a>
+                    </div>
+                </div> -->
+                <div class="col-md-12" style="border:1px solid white; box-shadow:2px 2px 8px #808080; border-radius:10px;margin: 20px;">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home">DESCRIPTION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu1">RULES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu2">JUDGING CRITERIA </a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content" >
+                        <div id="home" class="tab-pane show fadeIn active"><br>
+                            <p>The entire event will consist of two rounds, which will be as follows:<br><br>
+                           1. A quiz<br><br>
+                           2. A rally alongwith a treasure hunt<br><br>
+                            </p>
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                            <p><br>
+                           The event contains of two rounds:-
+                           <br><br>
+                            1. Elimination round - all the registered teams have to pass through elimination round which contains a quiz based on Food and Food companies.
+                            The quiz would not be a typical pen-paper quiz but an interesting quiz. The top 5-7 teams (or solo) would be selected for next round.
+                            <br><br>
+                            2. Treasure hunt - the shortlisted team have to find the hidden treasure in order to win the event. The major point to keep track of is that all the groups participating must at least have an android enabled phone. The helping members would be provided all around the campus.</p>
+                        </div>
+                        <div id="menu2" class="tab-pane fade"><br>
+                            <p>In both the rounds, the coordinators and volunteers would be the judge.<br> 
+                           For first round, all answers are with the coordinators and for the second round, answers of the hunt are with the coordinators thus coordinators only would be the judge.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <button class="btn btn-success" style="color: black;"id="event_button" style="margin-bottom:1em;">Register</button>
+                    </div>
+                </div>
             </div>
-            <div id="menu2" class="tab-pane fade"><br>
-              <p>In both the rounds, the coordinators and volunteers would be the judge.<br> 
-               For first round, all answers are with the coordinators and for the second round, answers of the hunt are with the coordinators thus coordinators only would be the judge.
-              </p>
-            </div>
         </div>
-      </div>
     </div>
 </div>
    <!--  <div class="container" style="width:100%;border:1px solid white; box-shadow:2px 2px 8px #808080; border-radius:10px;"> -->

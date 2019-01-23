@@ -1335,7 +1335,7 @@ nav > a:hover:after{
   border:none;
  /* width:250px;
   height:100px;*/
-  margin-top: 40px;
+  /*margin-top: 40px;*/
   box-shadow:2px 2px 8px #808080;
   padding:10px;
   text-align: center;
@@ -1343,12 +1343,6 @@ nav > a:hover:after{
 /*.fa-facebook {
   background: #3B5998;
   color: white;*/
-}
-.btn-template-main{
-color:red;
-font-weight:bold;
-border-color:#d87230;
-background-color:white;
 }
 /*.row well-lg{
 display:inline;
