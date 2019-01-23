@@ -152,7 +152,7 @@ $_SESSION["signed_in"]=signed_in();
         		<div class="row">
         			<div class="col-lg-4 col-md-6 col-sm-12 ">
         				<div class="image animated rollIn delay-1s" style="opacity: 1;">
-        						<a href="#">
+        						<a href="events.php?etype=competition">
         							<img src="icons/xCompetitions.png.pagespeed.ic.aToADul0tm.png" alt="" class="img-responsive icon-size" data-pagespeed-url-hash="991711873">
         							<p class="icon-words">Competitions</p>
         						</a>
@@ -161,7 +161,7 @@ $_SESSION["signed_in"]=signed_in();
         				</div>
         			<div class="col-lg-4 col-md-6 col-sm-12 ">
         				<div class="image animated rollIn delay-1s" style="opacity: 1;">
-        					<a href="#">
+        					<a href="events.php?etype=fun">
         						<img src="icons/xExhibitions.png.pagespeed.ic.Y8SO8J0sW3.png" alt="" class="img-responsive icon-size" data-pagespeed-url-hash="991711873">
         						<p class="icon-words">Fun Events</p>
         					</a>
@@ -169,7 +169,7 @@ $_SESSION["signed_in"]=signed_in();
         			</div>
         			<div class="col-lg-4 col-md-6 col-sm-12 ">
         				<div class="image animated rollIn delay-1s" style="opacity: 1;">
-        					<a href="#">
+        					<a href="events.php?etype=flagship">
         						<img src="icons/xFlagship.png.pagespeed.ic.HljCAhYebn.png" alt="" class="img-responsive icon-size" data-pagespeed-url-hash="991711873">
         						<p class="icon-words">Flagships</p>
         					</a>
@@ -179,7 +179,7 @@ $_SESSION["signed_in"]=signed_in();
         			<div class="col-lg-4 col-md-6 col-sm-12 ">
         				<div class="image animated rollIn delay-1s" style="opacity: 1;">
         				<div class="image">
-        					<a href="#">
+        					<a href="events.php?etype=musical night">
         						<img src="icons/xMusical,P20Night.png.pagespeed.ic.NFqw8BdY7F.png" alt="" class="img-responsive icon-size" data-pagespeed-url-hash="991711873">
         						<p class="icon-words">Musical Night</p>
         					</a>
@@ -189,7 +189,7 @@ $_SESSION["signed_in"]=signed_in();
         			<div class="col-lg-4 col-md-6 col-sm-12 ">
         				<div class="image animated rollIn delay-1s" style="opacity: 1;">
         				<div class="image">
-        					<a href="#">
+        					<a href="events.php?etype=proshows">
         						<img src="icons/xProshows.png.pagespeed.ic.D0CWp-lfuL.png" alt="" class="img-responsive icon-size" data-pagespeed-url-hash="991711873">
         						<p class="icon-words">Proshows</p>
         					</a>
@@ -199,7 +199,7 @@ $_SESSION["signed_in"]=signed_in();
         			<div class="col-lg-4 col-md-6 col-sm-12 ">
         				<div class="image animated rollIn delay-1s" style="opacity: 1;">
         				<div class="image">
-        					<a href="#">
+        					<a href="events.php?etype=extras">
         						<img src="icons/xWorkshops.png.pagespeed.ic.0UW73YiNxo.png" alt="" class="img-responsive icon-size" data-pagespeed-url-hash="991711873">
         						<p class="icon-words">Workshops, Exhibitions & Guest Talks</p>
         					</a>

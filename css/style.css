@@ -1333,8 +1333,8 @@ nav > a:hover:after{
  }*/
  .well-lg{
   border:none;
- /* width:250px;
-  height:100px;*/
+/*  width:250px;*/
+  min-height:110px;
   /*margin-top: 40px;*/
   box-shadow:2px 2px 8px #808080;
   padding:10px;

@@ -1,6 +1,6 @@
 <?php
 require './db_connect.php';
-$query = "SELECT * FROM event";
+$query = "SELECT * FROM event WHERE category = '".$_GET['etype']."'";
 $result2 = mysqli_query($con, $query);
 $row2 = mysqli_fetch_array($result2);
 $result = mysqli_query($con, $query);
@@ -13,26 +13,72 @@ $row = mysqli_fetch_array($result);
         <meta charset="UTF-8" />
         <link rel="shortcut icon" href="favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"/> -->
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- Bootstrap core CSS -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Material Design Bootstrap -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.15/css/mdb.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/base.css" />
-        <link rel="stylesheet" type="text/css" href="css/particles.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-        <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+        
+		<link rel="shortcut icon" type="images/png" href="/images/NU_LOGO_BW.png"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Material Design Bootstrap -->
+    <link href="https://mdbootstrap.com/previews/templates/landing-page/css/mdb.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/style.css" rel="stylesheet">
+  
+	<style>
+    	html,
+        body,
+        header,
+        .jarallax {
+          height: 100%;
+        }
+        body{
+            margin: 5% 5% 0;
+            padding: 0;
+        }
+        @media (min-width: 560px) and (max-width: 740px) {
+          html,
+          body,
+          header,
+          .jarallax {
+            height: 500px;
+          }
+        }
 
-        <style type="text/css">
-          
-  h2{
-      text-align: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-        </style>
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #3f51b5!important;
+            }
+            .navbar {
+              box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12) !important;
+            }
+        }
+
+        .font-small {
+            font-size: 0.9rem;
+        }
+        body {
+  			background-image: url("images/Background.png");
+  			/*background-repeat: no-repeat;*/
+  			background-repeat: repeat-y;
+  			background-size: 100% 100%;
+		}
+		section {
+		    background-color: #ffffff;
+		    padding: 20px;
+		}
+		html {
+		    height: 100%
+		}
+    </style>
+    <!-- Custom stylesheet - for your changes -->
+    <style>.row>.column{padding:0 8px}.row:after{content:"";display:table;clear:both}.column{float:left;width:25%}img.demo{opacity:.6}.active,.demo:hover{opacity:1}img.hover-shadow{transition:.3s}.hover-shadow:hover{box-shadow:0 4px 8px 0 rgba(0,0,0,.2) , 0 6px 20px 0 rgba(0,0,0,.19)}body::-webkit-scrollbar{width:.4em}body::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3)}body::-webkit-scrollbar-thumb{background-color:#cc4444;outline:1px solid #ee8139}</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	<script type="text/javascript" src="https://tympanus.net/codrops/adpacks/analytics.js"></script>
+		
     </head>
     <body class="loading">
       <!--Put preloader here-->
@@ -58,54 +104,127 @@ $row = mysqli_fetch_array($result);
               <path d="M16.315.061c.543 0 .984.44.984.984v17.217c0 .543-.44.983-.984.983L.328 10.391s-.738-.738 0-1.476C1.066 8.178 16.315.061 16.315.061zM35.006.061c.543 0 .984.44.984.984v17.217c0 .543-.44.984-.984.984L19.019 10.39s-.738-.738 0-1.475C19.757 8.178 35.006.06 35.006.06z"/>
             </svg>
         </svg>
+		<!--Navbar -->
+		<nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark fixed-top scrolling-navbar">
+		  <a class="navbar-brand" href="index.php"><img src="images/NU_LOGO_WB.png" style="height: 40px"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+			aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item">
+				<a class="nav-link" href="index.php">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="comingsoon.php">Gallery</a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="nav-link" href="all_events.php">Events
+					<span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="contact.php">Contact us</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="ca.php">CA Program</a>
+			  </li>
+			  <li class="nav-item">
+				<?php
+											if(!$_SESSION['signed_in'])
+												echo '<a class="nav-link" href="login.php">Register</a>';
+											else
+												echo '<a class="nav-link" href="user_profile.php">User Profile</a>';
+											?>
+			  </li>
+
+			<!-- <ul class="navbar-nav ml-auto nav-flex-icons">
+			  <li class="nav-item">
+				<a class="nav-link" href="user_profile.php">View Profile</a>
+			  </li>
+			   <li class="nav-item">
+				  <a class="nav-link" href="#">Logout</a>
+			  </li> -->
+			  </ul>
+		  </div>
+		</nav>
       <main>
-          <div class="grid-wrap">
-            <h2>Events</h2>
-              <div class="grid">
-                <?php 
-            while($row) {?>
-                <a href="#" class="grid__item">
-                  <div class="grid__item-bg"></div>
-                  <div class="grid__item-wrap">
-                    <img class="grid__item-img" src="images/nuposters/<?php echo $row['image'];?>" alt="<?php echo $row['image'];?>" />
-                  </div>
-                  <h3 class="grid__item-title"><?php echo $row['name'];?></h3>
-                  <h4 class="grid__item-number">NU<?php echo $row['eid'];?></h4>
-                </a>
-                <?php
-                $row =  mysqli_fetch_array($result);
-              }?>
-              </div>
-            </div><!-- /grid-wrap -->
-            <div class="content">
-                <?php 
-            while($row2) {?>
-              <div class="content__item">
-                <div class="content__item-intro">
-                  <img class="content__item-img" src="images/nuposters/<?php echo $row2['image'];?>" alt="<?php echo $row2['image'];?>" />
-                  <h2 class="content__item-title"></h2>
-                </div>
-                <h3 class="content__item-subtitle"><?php echo $row2['name'];?></h3>
-                <div class="content__item-text">
-                  <span><p>Date : </p><?php echo $row2['date']; ?></span>
-                  <span><p>Time : </p><?php echo $row2['time']; ?></span>
-                  <span><p>Venue : </p><?php echo $row2['venue']; ?></span>
-                  <span><p>Coordinator1 : </p><?php echo $row2['coordinator1']; ?></span>
-                  <span><p>Coordinator2 : </p><?php echo $row2['coordinator2']; ?></span>
-                  <span><p>Number1 : </p><?php echo $row2['number1']; ?></span>
-                  <span><p>Number2 : </p><?php echo $row2['number2']; ?></span>
-                  <span><p>Description : </p><?php echo $row2['description']; ?></span>
-                  <span><p>Rules : </p><?php echo $row2['rules']; ?></span>
-                  <span><p>Criteria : </p><?php echo $row2['criteria']; ?></span>
-                </div>
-              </div>
-            <?php
-                $row2 =  mysqli_fetch_array($result2);
-              }?>
-              <button class="content__close">Close</button>
-              <svg class="content__indicator icon icon--caret"><use xlink:href="#icon-caret"></use></svg>
-            </div>
+          <h3 class="text-center dark-grey-text text-uppercase font-weight-bold mt-5 pt-5 wow fadeIn" data-wow-delay="0.2s">
+          	  <strong>
+				    <?php 
+						if(isset($_GET['etype'])) {
+							echo $_GET['etype'];
+						}
+				    ?>
+			  </strong>
+        	</h3>
+			<div class="grid-wrap">
+				<div class="grid">
+					<?php while($row) {?>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="images/nuposters/<?php echo $row['image'];?>" alt="<?php echo $row['image'];?>">
+						</div>
+						<h3 class="grid__item-title"><?php echo $row['name'];?></h3>
+						<h4 class="grid__item-number">NU<?php echo $row['eid'];?></h4>
+					</a>
+					<?php
+                		$row =  mysqli_fetch_array($result);
+              		}?>
+				</div>
+			</div><!-- /grid-wrap -->
+			<div class="content">
+				<?php while($row2) {?>
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="images/nuposters/<?php echo $row2['image'];?>" alt="<?php echo $row2['image'];?>">
+						<h2 class="content__item-title"><?php echo $row['name'];?></h2>
+					</div>
+					<h3 class="content__item-subtitle"><?php echo $row['name'];?></h3>
+					<div class="content__item-text">
+						<p><?php echo $row2['description']; ?></p>
+					</div>
+					<div class="content__see more text-center mt-5">
+						<a href="event_details.php?eid=<?php echo $row2['eid'];?>" class="btn btn-secondary">See More</a>
+					</div>
+				</div>
+				<?php
+					$row2 =  mysqli_fetch_array($result2);
+				}?>
+				<button class="content__close">Close</button>
+				<svg class="content__indicator icon icon--caret"><use xlink:href="#icon-caret"></use></svg>
+			</div>
       </main>
+		
+		<footer class="page-footer font-small special-color-dark pt-4">
+        <!-- Footer Elements -->
+        <div class="container">
+          <!-- Social buttons -->
+          <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/nitrutsav.nitrkl/" target="_blank" class="btn-floating btn-fb mx-1">
+                <i class="fa fa-facebook-f"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:nitrutsav2019@gmail" target="_blank" class="btn-floating btn-email mx-1">
+                <i class="fa fa-at icon"> </i>
+              </a>
+            </li>
+          </ul>
+          <!-- Social buttons -->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+          <a href="https://www.nitrutsav.com/"> NITRUTSAV</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
         <!-- JQuery -->
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Bootstrap tooltips -->
@@ -123,5 +242,19 @@ $row = mysqli_fetch_array($result);
     <script src="js/anime.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+		<script>
+		//Animation init
+		new WOW().init();
+		
+		//Modal
+		$('#myModal').on('shown.bs.modal', function () {
+		  $('#myInput').focus()
+		})
+		
+		// MDB Lightbox Init
+		$(function () {
+		  $("#mdb-lightbox-ui").load("https://mdbootstrap.com/previews/templates/landing-page/mdb-addons/mdb-lightbox-ui.html");
+		});
+  	</script>
     </body>
 </html>

@@ -2,9 +2,9 @@
 
 require './db_connect.php';
 
-$query = "SELECT * FROM event";
-$result2 = mysqli_query($con, $query);
-$row2 = mysqli_fetch_array($result2);
+$query = "SELECT * FROM event WHERE eid = ".$_GET['eid'];
+//$result2 = mysqli_query($con, $query);
+//$row2 = mysqli_fetch_array($result2);
 $result = mysqli_query($con, $query);
 $row = mysqli_fetch_array($result);
 
@@ -44,6 +44,7 @@ $_SESSION["signed_in"]=signed_in();
         body{
             margin: 5%;
             padding: 0;
+			color: black
         }
         @media (min-width: 560px) and (max-width: 740px) {
           html,
@@ -136,35 +137,37 @@ $_SESSION["signed_in"]=signed_in();
 <br><br>
 <main>
 <div class="container mb-5">
-    <h3 style="font-weight:bold;padding-bottom: 10px;"><span>ALOHOMORA</span></h3>
+    <h3 style="font-weight:bold;padding-bottom: 10px;"><span><?php echo $row['name']; ?></span></h3>
     <div class="row">
         <div class="col-lg-6">
-            <img class="w-100" src="img/1.jpg" style="border-radius:15px;box-shadow:2px 2px 8px #808080;" alt="Image">
+            <img class="w-100" src="images/nuposters/<?php echo $row['image']; ?>" style="border-radius:15px;box-shadow:2px 2px 8px #808080;" alt="Image">
         </div> 
         <div class="col-lg-6">
             <div class="row">
                 <div class="col-md-6">
                      <div class="well-lg mx-3 mb-3">
                         <h4 style="font-weight:bold;"><span> DATE</span></h4>
-                        <span>22/10/2018</span>
+                        <span><?php echo $row['date']; ?></span>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="well-lg mx-3 mb-3">
                         <h4 style="font-weight:bold;"><span>TIME</span></h4>
-                        <span>9:00 am  to 12:00 pm</span>
+                        <span><?php echo $row['time']; ?></span>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="well-lg mx-3 mb-3">
                         <h4 style="font-weight:bold;"><span> VENUE</span></h4>
-                        <span>MAIN BUILDING</span>
+                        <span><?php echo $row['venue']; ?></span>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="well-lg mx-3 mb-3">
 						<h4 style="font-weight:bold;"><span>COORDINATORS</span></h4>
-                        <span>PAWAN</span>
+                        <span>1. <?php echo $row['coordinator1']; ?> (<?php echo $row['number1']; ?>)</span>
+						<br>
+						<span>2. <?php echo $row['coordinator2']; ?> (<?php echo $row['number2']; ?>)</span>
                     </div>
                 </div>
                 <!-- <div class="col-md-6">
@@ -193,24 +196,13 @@ $_SESSION["signed_in"]=signed_in();
                     <!-- Tab panes -->
                     <div class="tab-content" >
                         <div id="home" class="tab-pane show fadeIn active"><br>
-                            <p>The entire event will consist of two rounds, which will be as follows:<br><br>
-                           1. A quiz<br><br>
-                           2. A rally alongwith a treasure hunt<br><br>
-                            </p>
+                            <p><?php echo $row['description']; ?></p>
                         </div>
                         <div id="menu1" class="tab-pane fade">
-                            <p><br>
-                           The event contains of two rounds:-
-                           <br><br>
-                            1. Elimination round - all the registered teams have to pass through elimination round which contains a quiz based on Food and Food companies.
-                            The quiz would not be a typical pen-paper quiz but an interesting quiz. The top 5-7 teams (or solo) would be selected for next round.
-                            <br><br>
-                            2. Treasure hunt - the shortlisted team have to find the hidden treasure in order to win the event. The major point to keep track of is that all the groups participating must at least have an android enabled phone. The helping members would be provided all around the campus.</p>
+                            <p><?php echo $row['rules']; ?></p>
                         </div>
                         <div id="menu2" class="tab-pane fade"><br>
-                            <p>In both the rounds, the coordinators and volunteers would be the judge.<br> 
-                           For first round, all answers are with the coordinators and for the second round, answers of the hunt are with the coordinators thus coordinators only would be the judge.
-                            </p>
+                            <p><?php echo $row['criteria']; ?></p>
                         </div>
                     </div>
                 </div>
