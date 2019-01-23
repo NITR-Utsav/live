@@ -6,15 +6,15 @@
 	box-sizing: border-box;
 }
 body {
-	background: #175690;
+	/*background: #175690;*/
 	font-family: 'open sans', sans-serif;
 }
 
-body {
+/*body {
   background-image: url("images/Background.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
+}*/
 html {
     height: 100%
 }
