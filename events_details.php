@@ -101,7 +101,7 @@ $_SESSION["signed_in"]=signed_in();
           <a class="nav-link" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="comingsoon.php">Gallery</a>
+          <a class="nav-link" href="gallery.php">Gallery</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="all_events.php">Events
@@ -129,14 +129,14 @@ $_SESSION["signed_in"]=signed_in();
          <li class="nav-item">
             <a class="nav-link" href="#">Logout</a>
         </li> -->
-       
+		</ul>
     </div>
   </nav>
 <!--/.Navbar -->
 <br><br>
 <main>
 <div class="container mb-5">
-    <h3 style="font-weight:bold;padding-bottom: 10px;"><span">ALOHOMORA</span></h3>
+    <h3 style="font-weight:bold;padding-bottom: 10px;"><span>ALOHOMORA</span></h3>
     <div class="row">
         <div class="col-lg-6">
             <img class="w-100" src="img/1.jpg" style="border-radius:15px;box-shadow:2px 2px 8px #808080;" alt="Image">
@@ -163,7 +163,7 @@ $_SESSION["signed_in"]=signed_in();
                 </div>
                 <div class="col-md-6">
                     <div class="well-lg mx-3 mb-3">
-                        <h4 style="font-weight:bold;"><span>COORDINATORS<span></h4>
+						<h4 style="font-weight:bold;"><span>COORDINATORS</span></h4>
                         <span>PAWAN</span>
                     </div>
                 </div>

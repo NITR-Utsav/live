@@ -67,7 +67,7 @@ $row = mysqli_fetch_array($result);
                 <a href="#" class="grid__item">
                   <div class="grid__item-bg"></div>
                   <div class="grid__item-wrap">
-                    <img class="grid__item-img" src="img/<?php echo $row['image'];?>" alt="<?php echo $row['image'];?>" />
+                    <img class="grid__item-img" src="images/nuposters/<?php echo $row['image'];?>" alt="<?php echo $row['image'];?>" />
                   </div>
                   <h3 class="grid__item-title"><?php echo $row['name'];?></h3>
                   <h4 class="grid__item-number">NU<?php echo $row['eid'];?></h4>
@@ -82,7 +82,7 @@ $row = mysqli_fetch_array($result);
             while($row2) {?>
               <div class="content__item">
                 <div class="content__item-intro">
-                  <img class="content__item-img" src="img/<?php echo $row2['image'];?>" alt="<?php echo $row2['image'];?>" />
+                  <img class="content__item-img" src="images/nuposters/<?php echo $row2['image'];?>" alt="<?php echo $row2['image'];?>" />
                   <h2 class="content__item-title"></h2>
                 </div>
                 <h3 class="content__item-subtitle"><?php echo $row2['name'];?></h3>

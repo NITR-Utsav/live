@@ -133,7 +133,7 @@ $_SESSION["signed_in"]=signed_in();
 					<div class="inner">
 						<div class="row pt-5">
 							<div class="col-md-4 text-center">
-								<a href="comingsoon.html"><img src="images/TENT1.png"></a>
+								<a href="gallery.php"><img src="images/TENT1.png"></a>
 							</div>
 							<div class="col-md-4 text-center">
 								<?php
@@ -147,7 +147,7 @@ $_SESSION["signed_in"]=signed_in();
 								<a href="contact.php"><img src="images/TENT3.png"></a>
 							</div>
 							<div class="col-md-4 text-center offset-2">
-								<a href="events.php"><img src="images/TENT4.png"></a>
+								<a href="all_events.php"><img src="images/TENT4.png"></a>
 							</div>
 							<div class="col-md-4 text-center">
 								<a href="ca.php"><img src="images/TENT5.png"></a>
